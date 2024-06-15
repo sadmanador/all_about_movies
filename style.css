@@ -1,0 +1,17 @@
+/* rgb(234, 179, 8)
+rgb(229, 231, 235) */
+body{
+  overflow-x: hidden;
+}
+
+.slider {
+  background-image: url("assets/civil_war.jpg");
+  min-height: 450px;
+}
+
+@media (min-width: 1100px) {
+  .slider {
+    min-width: 850px;
+    /* height: 485px; */
+  }
+}

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ALLABOUT MOVIES</title>
+  </head>
+  <body class="bg-black">
+    <header class="bg-zinc-900 sticky top-0 z-30">
+      <nav class="flex justify-around items-center py-6">
+        <!-- logo -->
+        <div class="flex gap-4 justify-between lg:w-60 items-center">
+          <!-- logo child 1 -->
+          <div class="">
+            <div>
+              <p class="text-yellow-500 lg:text-lg text-sm">ALLABOUT</p>
+            </div>
+            <div>
+              <p class="text-yellow-500 lg:text-xl text-lg font-bold">MOVIES</p>
+            </div>
+          </div>
+           <!-- logo child 2 -->
+          <div class="">
+            <p
+              class="navigation text-yellow-500 text-md lg:text-lg underline-offset-4"
+            >
+              Explore
+            </p>
+          </div>
+        </div>
+
+        <!-- input field -->
+        <div>
+          <div class="mx-auto">
+            <input
+              type="text"
+              class="input lg:w-96 rounded-md placeholder:bg-black placeholder:text-zinc-600 placeholder:text-xl lg:p-2 p-1 bg-black"
+              placeholder="Search"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="lg:px-20">
+      <!-- banner -->
+      <section class="grid xl:grid-cols-3">
+        <!-- banner section -->
+        <div class="mb-24 lg:mb-0 col-span-2">
+          <div class="relative">
+
+            <!-- main slider -->
+            <div class="slider bg-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black to-transparent"
+              ></div>
+            </div>
+
+            <!-- position outside element -->
+            <div class="absolute left-10 -bottom-24 w-full">
+              <div
+                class="flex md:flex-row flex-col lg:gap-16 md:gap-10 sm:gap-8 gap-4"
+              >
+                <img class="w-40" src="assets/civil_war.jpg" alt="" />
+                <div class="">
+                  <p
+                    class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white"
+                  >
+                    Civil War(2024)
+                  </p>
+                  <p class="lg:mt-4 text-stone-400 text-wrap lg:block max-w-96">
+                    In the near future, a group of war journalists attempt to
+                    survive while reporting the truth as the United States
+                    stands on the brink of civil war.
+                  </p>
+                  <p class="mt-4 text-stone-400">Genres: War, Action, Drama</p>
+                  <p class="mt-4 text-stone-400">
+                    <img
+                      src="/assets/star.png"
+                      class="w-[16px] inline"
+                      alt="rating"
+                    />
+                    Rating : 7.2
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- banner side bar -->
+        <aside class="mt-24 xl:mt-0 ml-6">
+          <p class="text-yellow-500 font-bold text-xl py-4">Up Next</p>
+
+          <div class="bg-gradient-to-b from-zinc-900 via-zinc-900 to-black p-4">
+            <div class="flex gap-4 mb-4">
+              <img class="w-24" src="assets/farFromMan.jpg" alt="" />
+              <div>
+                <p class="text-stone-400">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  <br />Facilis nihil dolorum inventore officiis animi eum illum
+                  rem
+                </p>
+                <p class="text-stone-400">Genres: War, Action, Drama</p>
+                <p class="text-stone-400">Rating : 7.2</p>
+              </div>
+            </div>
+            <div class="flex gap-4 mb-4">
+              <img class="w-24" src="assets/fightclub.jpg" alt="" />
+              <div>
+                <p class="text-stone-400">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  <br />Facilis nihil dolorum inventore officiis animi eum illum
+                  rem
+                </p>
+                <p class="text-stone-400">Genres: War, Action, Drama</p>
+                <p class="text-stone-400">Rating : 7.2</p>
+              </div>
+            </div>
+            <div class="flex gap-4 mb-4">
+              <img class="w-24" src="assets/godfather.jpg" alt="" />
+              <div>
+                <p class="text-stone-400">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  <br />Facilis nihil dolorum inventore officiis animi eum illum
+                  rem
+                </p>
+                <p class="text-stone-400">Genres: War, Action, Drama</p>
+                <p class="text-stone-400">Rating : 7.2</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="font-bold text-xl text-white hover:text-yellow-500">
+            Browse Movies >
+          </p>
+        </aside>
+      </section>
+
+      <!-- individual movie cards -->
+      <section>
+        <h3 class="text-2xl text-yellow-500 font-bold ml-6">
+          Top Rated Movies
+        </h3>
+
+        <!-- movie container -->
+        <div
+          class="grid xl:grid-cols-6 lg:grid-cols-5 grid-cols-2 md:grid-cols-3 gap-10 px-4 md:px-8"
+        >
+
+        <!-- movie 1st -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/fightclub.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Fight Club
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 8.7
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 1991
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 2nd -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/farFromMan.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Far From Man
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 7.7
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 2004
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 3rd -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/flynn.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Flynn
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 9.0
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : FR
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 2006
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- movie 4th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/jules_verne.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Jules Varne
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 6.8
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : RU
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 2012
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 5th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/ringOfPower.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Rings of Power
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 7.6
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 2022
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 6th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/testament.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Testament
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 7.5
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 1991
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 7th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/the_perfect_storm.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    The Perfect Storm
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 8.0
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 1998
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+           <!-- movie 8th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/cityOfGod.jpeg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    City Of Gods
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 7.7
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 2002
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 9th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/darkKnight.jpeg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    The Dark Knight
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 9.5
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 2014
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+           <!-- movie 10th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/godfather.jpg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Godfather
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 9.8
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 1990
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+           <!-- movie 11th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/LifeIsBeautiful.jpeg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Life Is Beautiful
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 8.7
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 1991
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <!-- movie 12th -->
+          <a href="" class="hover:scale-105 transition-transform">
+            <div
+              class="flex flex-col my-3 _border rounded-lg overflow-hidden duration-200"
+            >
+              <div class="relative cursor-pointer">
+                <img
+                  class=""
+                  src="assets/GoodFellas.jpeg"
+                  class="object-cover w-48"
+                  alt=""
+                />
+                <div
+                  class="absolute z-10 bottom-2 left-2 flex gap-2 items-center"
+                ></div>
+                <div
+                  class="absolute -bottom-10 w-full h-28 _trailerLeftgradient"
+                ></div>
+              </div>
+              <div
+                class="z-10 flex flex-col items-stretch gap-1 h-fit justify-between bg-[#222] p-2"
+              >
+                <div class="cursor-pointer">
+                  <h2
+                    class="text-white text-left md:text-[17px] text-sm font-semibold line-clamp-1 w-fit hover:underline"
+                  >
+                    Good Fellas
+                  </h2>
+                  <div
+                    class="mt-2 md:text-[15px] text-[13px] text-zinc-300 line-clamp-1"
+                  >
+                    <h3 class="flex gap-1 items-center">
+                      <img
+                        src="/assets/star.png"
+                        class="w-[16px] inline"
+                        alt="rating"
+                      />
+                      Rating: 8.7
+                    </h3>
+                  </div>
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Language : EN
+                  </h3>
+
+                  <h3 class="text-zinc-300 md:text-[14px] text-[13px]">
+                    Release : 1994
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <!-- Load more button -->
+        <div class="flex justify-center mt-8">
+          <div class="mx-auto">
+            <button
+              class="border border-white rounded-none py-2 px-6 text-white font-bold xl:text-xl hover:bg-white hover:text-black"
+            >
+              Load more...
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
